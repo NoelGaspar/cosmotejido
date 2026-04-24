@@ -7,7 +7,7 @@
         </router-link>
         <div class="header-right">
           <span class="page-indicator">{{ i18n.t('viewer.pageIndicator') }} {{ currentPage }} {{ i18n.t('viewer.of') }} {{ totalPages }}</span>
-          <a href="/informe.pdf" download="catalogo.pdf" class="download-button">
+          <a :href="pdfUrl" download="catalogo.pdf" class="download-button">
             {{ i18n.t('viewer.downloadButton') }}
           </a>
         </div>
@@ -39,6 +39,7 @@
 import { ref, onMounted } from 'vue'
 import * as pdfjsLib from 'pdfjs-dist'
 import { i18n } from '../i18n/store'
+import pdfUrl from '/informe.pdf'
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`
 
@@ -49,7 +50,7 @@ let pdfDoc = null
 
 const loadPDF = async () => {
   try {
-    const loadingTask = pdfjsLib.getDocument('/informe.pdf')
+    const loadingTask = pdfjsLib.getDocument(pdfUrl)
     pdfDoc = await loadingTask.promise
     totalPages.value = pdfDoc.numPages
     renderPage(currentPage.value)

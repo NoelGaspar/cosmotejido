@@ -3,11 +3,11 @@
     <div class="header-content">
       <div class="logo">
         <img src="/favicon.svg" alt="Logo" class="logo-icon" />
-        <span class="logo-text">Aymara sawuri</span>
+        <span class="logo-text">Cosmo tejido</span>
       </div>
       <button class="lang-toggle" @click="i18n.toggleLocale()">
         <img
-          :src="i18n.locale === 'en' ? '/img/united-states.png' : '/img/chile.png'"
+          :src="i18n.locale === 'en' ? usFlag : clFlag"
           :alt="i18n.locale === 'en' ? 'US Flag' : 'Chile Flag'"
           class="flag-icon"
         />
@@ -19,6 +19,8 @@
 
 <script setup>
 import { i18n } from '../i18n/store'
+import usFlag from '/img/united-states.png'
+import clFlag from '/img/chile.png'
 </script>
 
 <style scoped>
