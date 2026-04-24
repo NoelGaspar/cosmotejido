@@ -59,6 +59,13 @@ import clFlag from '/img/chile.png'
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo-text:hover {
+  color: #bdc3c7;
 }
 
 .lang-toggle {
