@@ -6,6 +6,11 @@
         <span class="logo-text">Aymara sawuri</span>
       </div>
       <button class="lang-toggle" @click="i18n.toggleLocale()">
+        <img
+          :src="i18n.locale === 'en' ? '/img/united-states.png' : '/img/chile.png'"
+          :alt="i18n.locale === 'en' ? 'US Flag' : 'Chile Flag'"
+          class="flag-icon"
+        />
         {{ i18n.locale.toUpperCase() }}
       </button>
     </div>
@@ -68,5 +73,13 @@ import { i18n } from '../i18n/store'
 
 .lang-toggle:hover {
   background-color: #2980b9;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 </style>

@@ -12,6 +12,14 @@ El sitio no necesita un header. sin embargo sería ideal contar con uno sencillo
 
 La pagina inicial debe contener una imagen un poco de texto y un boton. tipo call to action.
 
+### Funciones del sitio
+
+- El sitio debe ser responsivo
+- El sitio es un sitio estatico
+- El sitio debe poder leerse en ingles y en español
+- Debe contar con una página para poder leer un catalogo de forma online
+- Esta ultima página debe contar con un boton para descargar el catalogo en pdf. 
+
 ## Información del proyecto
 
 - **Empresa:** Aymara sawuri

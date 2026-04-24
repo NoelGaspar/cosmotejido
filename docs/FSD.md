@@ -88,7 +88,7 @@ src/
 │   └── ViewerView.vue   # Visor de PDF
 ├── components/
 │   ├── AppHeader.vue    # Header compartido con toggle
-│   └── AppFooter.vue  # Footer compartido
+│   └── AppFooter.vue   # Footer compartido
 
 public/
 ├── informe.pdf        # Archivo del catálogo (PDF real)

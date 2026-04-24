@@ -18,7 +18,7 @@ const translations = {
     },
     footer: {
       companyName: 'Aymara sawuri',
-      copyright: '© 2025 Todos los derechos reservados'
+      copyright: '© 2026 Todos los derechos reservados'
     }
   },
   en: {
@@ -38,7 +38,7 @@ const translations = {
     },
     footer: {
       companyName: 'Aymara sawuri',
-      copyright: '© 2025 All rights reserved'
+      copyright: '© 2026 All rights reserved'
     }
   }
 }
