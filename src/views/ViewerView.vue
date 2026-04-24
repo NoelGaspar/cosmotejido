@@ -39,7 +39,7 @@
 import { ref, onMounted } from 'vue'
 import * as pdfjsLib from 'pdfjs-dist'
 import { i18n } from '../i18n/store'
-import pdfUrl from '/informe.pdf'
+import pdfUrl from '/cosmotejido/public/informe.pdf'
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`
 

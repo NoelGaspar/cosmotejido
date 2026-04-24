@@ -3,7 +3,7 @@
     <div class="header-content">
       <div class="logo">
         <img src="/favicon.svg" alt="Logo" class="logo-icon" />
-        <span class="logo-text">Cosmo tejido</span>
+        <router-link to="/" class="logo-text">Cosmo tejido</router-link>
       </div>
       <button class="lang-toggle" @click="i18n.toggleLocale()">
         <img
