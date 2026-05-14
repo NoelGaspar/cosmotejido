@@ -62,6 +62,7 @@ import clFlag from '/img/chile.png'
   color: #ecf0f1;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-family: var(--font-heading);
 }
 
 .logo-text:hover {
@@ -78,6 +79,7 @@ import clFlag from '/img/chile.png'
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: var(--font-body);
 }
 
 .lang-toggle:hover {

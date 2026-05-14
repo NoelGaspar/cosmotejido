@@ -159,6 +159,7 @@ watch(() => i18n.locale, (newLang) => {
   font-size: 0.875rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
+  font-family: var(--font-body);
 }
 
 .back-button:hover {
@@ -180,6 +181,7 @@ watch(() => i18n.locale, (newLang) => {
   font-size: 0.875rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
+  font-family: var(--font-body);
 }
 
 .download-button:hover {
@@ -190,6 +192,7 @@ watch(() => i18n.locale, (newLang) => {
   font-size: 1rem;
   color: #555;
   font-weight: 500;
+  font-family: var(--font-body);
 }
 
 .canvas-container {
@@ -226,6 +229,7 @@ watch(() => i18n.locale, (newLang) => {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: var(--font-body);
 }
 
 .nav-button:hover:not(:disabled) {

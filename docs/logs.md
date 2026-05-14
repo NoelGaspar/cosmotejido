@@ -6,6 +6,27 @@ Registro de modificaciones, mejoras y correcciones del proyecto.
 
 ## Mayo 2026
 
+### 14/05/2026 - Sistema de fuentes personalizado
+**Tipo:** Estilización
+
+**Cambio:**
+- Se agregaron fuentes personalizadas al proyecto:
+  - **Centaur** para headings (h1-h6): `/fonts/CENTAUR.TTF`
+  - **Texta** para textos body: `/fonts/TextaRegular.ttf`
+- Todos los textos ahora están en uppercase
+- Las fuentes se copiaron a `public/fonts/` para estar disponibles en producción
+
+**Archivos modificados:**
+- `src/App.vue` - CSS global con @font-face y variables CSS
+- `src/views/HomeView.vue` - Aplicación de fuentes a title, subtitle, description, button
+- `src/components/AppHeader.vue` - Aplicación de fuentes a logo y toggle
+- `src/components/AppFooter.vue` - Aplicación de fuentes a textos
+- `src/views/ViewerView.vue` - Aplicación de fuentes a controles
+
+**Archivos agregados:**
+- `public/fonts/CENTAUR.TTF`
+- `public/fonts/TextaRegular.ttf`
+
 ### 14/05/2026 - Rutas separadas por idioma
 **Tipo:** Refactorización
 

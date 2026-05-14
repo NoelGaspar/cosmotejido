@@ -75,6 +75,7 @@ const goToViewer = () => {
   line-height: 1.8;
   color: #555;
   margin: 0;
+  font-family: var(--font-body);
 }
 
 .cta-button {
@@ -88,6 +89,7 @@ const goToViewer = () => {
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.3s ease;
   align-self: flex-start;
+  font-family: var(--font-body);
 }
 
 .cta-button:hover {

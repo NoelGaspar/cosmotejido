@@ -59,6 +59,7 @@ import { i18n } from '../i18n/store'
   font-weight: 600;
   margin: 0 0 0.25rem 0;
   color: #ecf0f1;
+  font-family: var(--font-body);
 }
 
 .copyright {
