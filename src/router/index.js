@@ -13,7 +13,20 @@ const router = createRouter({
     {
       path: '/viewer',
       name: 'viewer',
-      component: ViewerView
+      component: ViewerView,
+      props: { lang: 'es' }
+    },
+    {
+      path: '/es/viewer',
+      name: 'viewer-es',
+      component: ViewerView,
+      props: { lang: 'es' }
+    },
+    {
+      path: '/en/viewer',
+      name: 'viewer-en',
+      component: ViewerView,
+      props: { lang: 'en' }
     }
   ]
 })

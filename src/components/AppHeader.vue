@@ -86,7 +86,7 @@ import clFlag from '/img/chile.png'
 
 .flag-icon {
   width: 20px;
-  height: 14px;
+  height: auto;
   border-radius: 2px;
   vertical-align: middle;
   margin-right: 4px;

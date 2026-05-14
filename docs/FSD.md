@@ -61,11 +61,15 @@
 
 ### ViewerView
 - Cargar PDF desde archivo local (public/)
+- Carga PDF diferente según idioma:
+  - ES: `21x28-catalogo-randomesp.pdf`
+  - EN: `21x28-catalogo-randomeng.pdf`
 - Renderizar página actual en canvas
 - Navegación: botón anterior, botón siguiente
 - Mostrar número de página actual / total
 - Botón para volver al inicio
 - Botón de descarga del PDF
+- Recarga automática al cambiar de idioma
 
 ### Sistema i18n
 - Toggle de idioma ES/EN en el header
@@ -91,8 +95,9 @@ src/
 │   └── AppFooter.vue   # Footer compartido
 
 public/
-├── informe.pdf        # Archivo del catálogo (PDF real)
-└── favicon.svg        # Icono de la app
+├── 21x28-catalogo-randomesp.pdf  # Catálogo en español
+├── 21x28-catalogo-randomeng.pdf  # Catálogo en inglés
+└── favicon.svg                  # Icono de la app
 ```
 
 ---
@@ -102,7 +107,8 @@ public/
 | Path | Componente | Descripción |
 |------|------------|-------------|
 | `/` | HomeView | Landing page |
-| `/viewer` | ViewerView | Visor de PDF |
+| `/es/viewer` | ViewerView | Visor PDF español |
+| `/en/viewer` | ViewerView | Visor PDF inglés |
 
 ---
 
@@ -118,6 +124,7 @@ public/
 ## 9. Pendientes (completados)
 
 - [x] Archivo PDF del catálogo (informe.pdf en public/)
+- [x] PDFs por idioma (español/inglés)
 - [x] Textos para la página de inicio (definidos con traducciones)
 - [x] Nombre de la empresa (Aymara sawuri)
 - [x] Nombre del proyecto (Cosmo tejido)

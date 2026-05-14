@@ -36,10 +36,26 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import * as pdfjsLib from 'pdfjs-dist'
 import { i18n } from '../i18n/store'
-import pdfUrl from '/informe.pdf'
+import { useRoute, useRouter } from 'vue-router'
+
+const props = defineProps({
+  lang: {
+    type: String,
+    default: 'es'
+  }
+})
+
+const route = useRoute()
+const router = useRouter()
+
+const pdfUrl = computed(() => {
+  return props.lang === 'en' 
+    ? '/cosmotejido/21x28-catalogo-randomeng.pdf' 
+    : '/cosmotejido/21x28-catalogo-randomesp.pdf'
+})
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`
 
@@ -50,8 +66,9 @@ let pdfDoc = null
 
 const loadPDF = async () => {
   try {
-    const loadingTask = pdfjsLib.getDocument(pdfUrl)
-    pdfDoc = await loadingTask.promise
+    const loadingTask = pdfjsLib.getDocument(pdfUrl.value)
+    const pdf = await loadingTask.promise
+    pdfDoc = pdf
     totalPages.value = pdfDoc.numPages
     renderPage(currentPage.value)
   } catch (error) {
@@ -96,6 +113,16 @@ const nextPage = () => {
 
 onMounted(() => {
   loadPDF()
+})
+
+watch(() => props.lang, () => {
+  currentPage.value = 1
+  loadPDF()
+})
+
+watch(() => i18n.locale, (newLang) => {
+  const routeLang = newLang === 'en' ? 'en' : 'es'
+  router.push(`/${routeLang}/viewer`)
 })
 </script>
 

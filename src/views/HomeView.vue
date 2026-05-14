@@ -7,9 +7,9 @@
         <p class="description">
           {{ i18n.t('home.description') }}
         </p>
-        <router-link to="/viewer" class="cta-button">
+        <button @click="goToViewer" class="cta-button">
           {{ i18n.t('home.ctaButton') }}
-        </router-link>
+        </button>
       </div>
       <div class="hero-image">
         <img src="@/assets/hero.png" alt="Catálogo Cosmo tejido" />
@@ -20,6 +20,14 @@
 
 <script setup>
 import { i18n } from '../i18n/store'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const goToViewer = () => {
+  const lang = i18n.locale === 'en' ? 'en' : 'es'
+  router.push(`/${lang}/viewer`)
+}
 </script>
 
 <style scoped>

@@ -39,9 +39,10 @@ src/
     └── hero.png        # Imagen del landing
 
 public/
-├── informe.pdf        # Archivo del catálogo PDF
-├── favicon.svg       # Favicon de la app
-└── icons.svg         # Iconos SVG
+├── 21x28-catalogo-randomesp.pdf  # Catálogo en español
+├── 21x28-catalogo-randomeng.pdf  # Catálogo en inglés
+├── favicon.svg                    # Favicon de la app
+└── icons.svg                     # Iconos SVG
 ```
 
 ## Convenciones de Código
@@ -130,7 +131,9 @@ Después de implementar cambios:
 
 ## Notas Importantes
 
-- El archivo PDF del catálogo está en `public/informe.pdf`
+- El visor carga PDFs según el idioma:
+  - ES: `public/21x28-catalogo-randomesp.pdf`
+  - EN: `public/21x28-catalogo-randomeng.pdf`
 - El visor usa pdfjs-dist para renderizar páginas en canvas
 - Los cambios en archivos Vue se hot-reloadan automáticamente
 - Los cambios en CSS se hot-reloadan automáticamente
