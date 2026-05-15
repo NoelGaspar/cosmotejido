@@ -112,7 +112,7 @@ const goToViewer = () => {
 
 @media (max-width: 900px) {
   .home-view {
-    padding-bottom: calc(80px + 4rem);
+    padding-bottom: calc(100px + 4rem);
   }
 
   .hero-section {

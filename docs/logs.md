@@ -2,9 +2,31 @@
 
 Registro de modificaciones, mejoras y correcciones del proyecto.
 
----
+### 15/05/2026 - Botones de navegación overlay en visor de PDF
+**Tipo:** Mejora UX
 
-## Mayo 2026
+**Cambio:**
+- Se agregaron botones de navegación en los laterales del visor de PDF
+- Botones con opacidad baja (0.4) que se iluminan al pasar el mouse
+- Flechas ‹ › grandes para facilitar el click
+- Se muestran solo cuando hay página anterior/siguiente disponible
+- Funcionalidad existente (prevPage/nextPage) reutilizada
+
+**Archivos modificados:**
+- `src/views/ViewerView.vue`
+
+### 15/05/2026 - Ajuste de padding en Home para móviles
+**Tipo:** Bug fix
+
+**Cambio:**
+- El footer fijo (position: fixed) tapaba el botón "View Catalog" en pantallas pequeñas
+- Se aumentó el padding-bottom en HomeView para mobile: `calc(80px + 4rem)`
+- Asegura que el contenido no quede oculto detrás del footer
+
+**Archivos modificados:**
+- `src/views/HomeView.vue`
+
+---
 
 ### 14/05/2026 - Sistema de fuentes personalizado
 **Tipo:** Estilización

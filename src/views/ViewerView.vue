@@ -313,6 +313,10 @@ watch(() => i18n.locale, (newLang) => {
 }
 
 @media (max-width: 600px) {
+  .viewer-view {
+    padding-bottom: calc(100px + 4rem);
+  }
+
   .viewer-header {
     flex-direction: column;
     align-items: stretch;
