@@ -111,6 +111,10 @@ const goToViewer = () => {
 }
 
 @media (max-width: 900px) {
+  .home-view {
+    padding-bottom: calc(80px + 4rem);
+  }
+
   .hero-section {
     grid-template-columns: 1fr;
     text-align: center;
