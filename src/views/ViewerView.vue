@@ -12,8 +12,26 @@
           </a>
         </div>
       </div>
-      <div class="canvas-container">
+      <div class="canvas-container" ref="canvasContainer">
         <canvas ref="pdfCanvas"></canvas>
+        <button
+          class="overlay-nav overlay-nav-prev"
+          :class="{ visible: currentPage > 1 }"
+          :disabled="currentPage <= 1"
+          @click="prevPage"
+          aria-label="Página anterior"
+        >
+          <span class="arrow">‹</span>
+        </button>
+        <button
+          class="overlay-nav overlay-nav-next"
+          :class="{ visible: currentPage < totalPages }"
+          :disabled="currentPage >= totalPages"
+          @click="nextPage"
+          aria-label="Página siguiente"
+        >
+          <span class="arrow">›</span>
+        </button>
       </div>
       <div class="viewer-controls">
         <button
@@ -196,6 +214,7 @@ watch(() => i18n.locale, (newLang) => {
 }
 
 .canvas-container {
+  position: relative;
   background-color: #f5f5f5;
   border-radius: 8px;
   padding: 1rem;
@@ -210,6 +229,57 @@ watch(() => i18n.locale, (newLang) => {
   max-width: 100%;
   height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.overlay-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.overlay-nav-prev {
+  left: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.overlay-nav-next {
+  right: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+.overlay-nav .arrow {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.overlay-nav:hover:not(:disabled) {
+  background-color: rgba(52, 152, 219, 0.8);
+}
+
+.overlay-nav.visible {
+  opacity: 0.4;
+}
+
+.overlay-nav.visible:hover {
+  opacity: 1;
+}
+
+.overlay-nav:disabled {
+  cursor: not-allowed;
+  opacity: 0 !important;
 }
 
 .viewer-controls {
