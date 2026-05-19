@@ -12,7 +12,7 @@
         </button>
       </div>
       <div class="hero-image">
-        <img src="@/assets/hero.png" alt="Catálogo Cosmo tejido" />
+        <img src="@/assets/portada.png" alt="Catálogo Cosmo tejido" />
       </div>
     </div>
   </div>
@@ -81,7 +81,7 @@ const goToViewer = () => {
 .cta-button {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background-color: #3498db;
+  background-color: #3d3a3d;
   color: white;
   text-decoration: none;
   border-radius: 8px;

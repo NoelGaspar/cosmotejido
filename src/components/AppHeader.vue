@@ -2,7 +2,7 @@
   <header class="app-header">
     <div class="header-content">
       <div class="logo">
-        <img src="/favicon.svg" alt="Logo" class="logo-icon" />
+        <img src="/img/logo/aymar.png" alt="Logo" class="logo-icon" />
         <router-link to="/" class="logo-text">Cosmo tejido</router-link>
       </div>
       <button class="lang-toggle" @click="i18n.toggleLocale()">
@@ -25,8 +25,8 @@ import clFlag from '/img/chile.png'
 
 <style scoped>
 .app-header {
-  background-color: #2c3e50;
-  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+  padding: 0.75rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -51,15 +51,16 @@ import clFlag from '/img/chile.png'
 }
 
 .logo-icon {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: auto;
+  max-height: 48px;
 }
 
 .logo-text {
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #ecf0f1;
+  color: #6b6375;
   text-decoration: none;
   transition: color 0.3s ease;
   font-family: var(--font-heading);
@@ -71,7 +72,7 @@ import clFlag from '/img/chile.png'
 
 .lang-toggle {
   padding: 0.5rem 1rem;
-  background-color: #3498db;
+  background-color: #3d3a3d;
   color: white;
   border: none;
   border-radius: 6px;
@@ -83,7 +84,7 @@ import clFlag from '/img/chile.png'
 }
 
 .lang-toggle:hover {
-  background-color: #2980b9;
+  background-color: #2d2a2d;
 }
 
 .flag-icon {
