@@ -71,8 +71,8 @@ const router = useRouter()
 
 const pdfUrl = computed(() => {
   return props.lang === 'en' 
-    ? '/cosmotejido/21x28-catalogo-randomeng.pdf' 
-    : '/cosmotejido/21x28-catalogo-randomesp.pdf'
+    ? '${base}21x28-catalogo-randomeng.pdf' 
+    : '${base}21x28-catalogo-randomesp.pdf'
 })
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`

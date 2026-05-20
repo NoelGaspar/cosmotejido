@@ -4,7 +4,7 @@ const translations = {
   es: {
     home: {
       title: 'Cosmos tejido',
-      subtitle: 'Aymara sawuri',
+      subtitle: 'Aymar Sawuri',
       description: 'Descubre nuestra exclusiva colección, donde tecnología, innovación y economía circular se integran en cada creación. Una propuesta que fusiona visión, maestría y colaboración desde el altiplano chileno, dando vida a piezas que unen tradición y contemporaneidad.',
       ctaButton: 'Ver Catálogo'
     },
@@ -17,14 +17,14 @@ const translations = {
       of: 'de'
     },
     footer: {
-      companyName: 'Aymara sawuri',
+      companyName: 'Aymar Sawuri',
       copyright: '© 2026 Todos los derechos reservados'
     }
   },
   en: {
     home: {
       title: 'Cosmos tejido',
-      subtitle: 'Aymara sawuri',
+      subtitle: 'Aymar Sawuri',
       description: 'Discover our exclusive collection of artisanal textiles. Each piece has been carefully crafted to transform your home into a unique and cozy space. From tapestries to decorative details that reflect the artisanal tradition of our master weavers.',
       ctaButton: 'View Catalog'
     },
@@ -37,7 +37,7 @@ const translations = {
       of: 'of'
     },
     footer: {
-      companyName: 'Aymara sawuri',
+      companyName: 'Aymar Sawuri',
       copyright: '© 2026 All rights reserved'
     }
   }
