@@ -5,7 +5,7 @@ const translations = {
     home: {
       title: 'Cosmos tejido',
       subtitle: 'Aymar Sawuri x Cris Miranda',
-      description: 'Descubre nuestra exclusiva colección, donde tecnología, innovación y economía circular se integran en cada creación. Una propuesta que fusiona visión, maestría y colaboración desde el altiplano chileno, dando vida a piezas que unen tradición y contemporaneidad.',
+      description: 'Descubra una colección exclusiva donde tecnología, innovación y economía circular convergen en cada creación. Una propuesta que integra visión, maestría y trabajo colaborativo desde el altiplano chileno, dando vida a piezas únicas que dialogan entre la tradición ancestral y la contemporaneidad.',
       ctaButton: 'Ver Catálogo'
     },
     viewer: {
@@ -25,7 +25,7 @@ const translations = {
     home: {
       title: 'Cosmos tejido',
       subtitle: 'Aymar Sawuri x Cris Miranda',
-      description: 'Discover our exclusive collection of artisanal textiles. Each piece has been carefully crafted to transform your home into a unique and cozy space. From tapestries to decorative details that reflect the artisanal tradition of our master weavers.',
+      description: 'Discover an exclusive collection where technology, innovation, and circular economy converge in every creation. A proposal that integrates vision, mastery, and collaborative work from the Chilean altiplano, bringing to life unique pieces that engage in a dialogue between ancestral tradition and contemporaneity.',
       ctaButton: 'View Catalog'
     },
     viewer: {
