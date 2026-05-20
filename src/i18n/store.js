@@ -23,7 +23,7 @@ const translations = {
   },
   en: {
     home: {
-      title: 'Cosmos weave',
+      title: 'Cosmos tejido',
       subtitle: 'Aymara sawuri',
       description: 'Discover our exclusive collection of artisanal textiles. Each piece has been carefully crafted to transform your home into a unique and cozy space. From tapestries to decorative details that reflect the artisanal tradition of our master weavers.',
       ctaButton: 'View Catalog'
