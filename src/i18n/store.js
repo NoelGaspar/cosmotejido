@@ -3,7 +3,7 @@ import { reactive } from 'vue'
 const translations = {
   es: {
     home: {
-      title: 'Cosmo tejido',
+      title: 'Cosmos tejido',
       subtitle: 'Aymara sawuri',
       description: 'Descubre nuestra exclusiva colección, donde tecnología, innovación y economía circular se integran en cada creación. Una propuesta que fusiona visión, maestría y colaboración desde el altiplano chileno, dando vida a piezas que unen tradición y contemporaneidad.',
       ctaButton: 'Ver Catálogo'
@@ -23,7 +23,7 @@ const translations = {
   },
   en: {
     home: {
-      title: 'Cosmo weave',
+      title: 'Cosmos weave',
       subtitle: 'Aymara sawuri',
       description: 'Discover our exclusive collection of artisanal textiles. Each piece has been carefully crafted to transform your home into a unique and cozy space. From tapestries to decorative details that reflect the artisanal tradition of our master weavers.',
       ctaButton: 'View Catalog'

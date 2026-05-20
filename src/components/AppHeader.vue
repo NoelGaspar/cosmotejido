@@ -3,7 +3,7 @@
     <div class="header-content">
       <div class="logo">
         <img src="/img/logo/aymar.png" alt="Logo" class="logo-icon" />
-        <router-link to="/" class="logo-text">Cosmo tejido</router-link>
+        <router-link to="/" class="logo-text">Cosmos tejido</router-link>
       </div>
       <button class="lang-toggle" @click="i18n.toggleLocale()">
         <img

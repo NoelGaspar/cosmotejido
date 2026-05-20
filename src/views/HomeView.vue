@@ -12,7 +12,7 @@
         </button>
       </div>
       <div class="hero-image">
-        <img src="@/assets/portada.png" alt="Catálogo Cosmo tejido" />
+        <img src="@/assets/portada.png" alt="Catálogo Cosmos tejido" />
       </div>
     </div>
   </div>
