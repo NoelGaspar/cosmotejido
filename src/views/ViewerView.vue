@@ -70,6 +70,7 @@ const route = useRoute()
 const router = useRouter()
 
 const pdfUrl = computed(() => {
+  const base = import.meta.env.BASE_URL
   return props.lang === 'en' 
     ? `${base}21x28-catalogo-randomeng.pdf`
     : `${base}21x28-catalogo-randomesp.pdf`
