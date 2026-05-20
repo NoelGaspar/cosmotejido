@@ -88,7 +88,7 @@ const goToViewer = () => {
   font-size: 1.125rem;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  align-self: flex-start;
+  align-self: center;
   font-family: var(--font-body);
 }
 

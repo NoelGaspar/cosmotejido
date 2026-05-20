@@ -170,7 +170,7 @@ watch(() => i18n.locale, (newLang) => {
 
 .back-button {
   padding: 0.5rem 1rem;
-  background-color: #3498db;
+  background-color: #3d3a3d;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -192,7 +192,7 @@ watch(() => i18n.locale, (newLang) => {
 
 .download-button {
   padding: 0.5rem 1rem;
-  background-color: #27ae60;
+  background-color: #3d3a3d;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -291,7 +291,7 @@ watch(() => i18n.locale, (newLang) => {
 
 .nav-button {
   padding: 0.75rem 1.5rem;
-  background-color: #3498db;
+  background-color: #3d3a3d;
   color: white;
   border: none;
   border-radius: 6px;

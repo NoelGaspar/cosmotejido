@@ -5,7 +5,7 @@ const translations = {
     home: {
       title: 'Cosmo tejido',
       subtitle: 'Aymara sawuri',
-      description: 'Descubre nuestra exclusiva colección de tejidos artesanales. Cada pieza ha sido cuidadosamente elaborada para transformar tu hogar en un espacio único y acogedor. Desde tapices hasta detalles decorativos que reflejan la tradición artesanal de nuestros maestros tejedores.',
+      description: 'Descubre nuestra exclusiva colección, donde tecnología, innovación y economía circular se integran en cada creación. Una propuesta que fusiona visión, maestría y colaboración desde el altiplano chileno, dando vida a piezas que unen tradición y contemporaneidad.',
       ctaButton: 'Ver Catálogo'
     },
     viewer: {
