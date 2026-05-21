@@ -12,7 +12,9 @@
         </button>
       </div>
       <div class="hero-image">
-        <img src="@/assets/portada.png" alt="Catálogo Cosmos tejido" />
+
+        <img src="@/assets/portada.png" @click="goToViewer" alt="Catálogo Cosmos tejido" class ="hero-image clickable-hero" />
+
       </div>
     </div>
   </div>
@@ -135,5 +137,15 @@ const goToViewer = () => {
   .hero-image {
     order: -1;
   }
+
+.clickable-hero {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.clickable-hero:hover {
+  transform: scale(1.02);
+}
+
 }
 </style>

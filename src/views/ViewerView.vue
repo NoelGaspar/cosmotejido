@@ -72,9 +72,9 @@ const router = useRouter()
 const pdfUrl = computed(() => {
   const base = import.meta.env.BASE_URL
 
-  return props.lang === 'en' 
-    ? `${base}21x28-catalogo-randomeng.pdf`
-    : `${base}21x28-catalogodigital_es.pdf`
+  return props.lang === 'en'
+    ? `${base}21x28-catalogodigital-eng.pdf`
+    : `${base}21x28-catalogodigital.pdf`
 })
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`
@@ -268,7 +268,7 @@ watch(() => i18n.locale, (newLang) => {
 }
 
 .overlay-nav:hover:not(:disabled) {
-  background-color: rgba(52, 152, 219, 0.8);
+  background-color: #3d3a3d;
 }
 
 .overlay-nav.visible {
